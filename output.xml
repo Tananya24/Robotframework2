@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.7 on win32)" generated="2024-10-28T17:49:51.175239" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="D:\Users\Joy\Desktop\secondRobot\test.robot">
+<test id="s1-t1" name="Search" line="18">
+<kw name="เข้าไปที่ google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-28T17:49:51.459865" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-28T17:49:51.459865" elapsed="4.492404"/>
+</kw>
+<status status="PASS" start="2024-10-28T17:49:51.459865" elapsed="4.492404"/>
+</kw>
+<kw name="ค้นหาคำว่าสวัสดี">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-28T17:49:55.953308" level="INFO">Typing text 'สวัสดี' into text field 'q'.</msg>
+<arg>q</arg>
+<arg>สวัสดี</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-28T17:49:55.953308" elapsed="0.145272"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-28T17:49:56.100411" level="INFO">Clicking button 'btnK'.</msg>
+<arg>btnK</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-28T17:49:56.099582" elapsed="0.224847"/>
+</kw>
+<status status="PASS" start="2024-10-28T17:49:55.952269" elapsed="0.372160"/>
+</kw>
+<kw name="รอจนกว่าจะเจอคำว่าสวัสดี">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>สวัสดี</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-28T17:49:56.325428" elapsed="3.353124"/>
+</kw>
+<status status="PASS" start="2024-10-28T17:49:56.324429" elapsed="3.355122"/>
+</kw>
+<status status="PASS" start="2024-10-28T17:49:51.458868" elapsed="8.220683"/>
+</test>
+<test id="s1-t2" name="Test Teardown" line="22">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-28T17:49:59.682552" elapsed="2.226689"/>
+</kw>
+<status status="PASS" start="2024-10-28T17:49:59.681552" elapsed="2.227689"/>
+</test>
+<status status="PASS" start="2024-10-28T17:49:51.178239" elapsed="10.733003"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
